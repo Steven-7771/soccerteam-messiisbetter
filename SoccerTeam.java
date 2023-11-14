@@ -9,14 +9,14 @@ public class SoccerTeam {
     private int losses;
     private int ties;
 
-    public SoccerTeam(){
+    public SoccerTeam(){//Initially start with all 0.
         wins = 0;
         losses = 0;
         ties = 0;
     }
 
     public void played (SoccerTeam other, int myScore, int otherScore){
-        if (myScore > otherScore){
+        if (myScore > otherScore){//List all the possible situations.
            this.wins++;
            other.losses++;
         } else if (myScore < otherScore){
@@ -32,7 +32,7 @@ public class SoccerTeam {
 (each win is three points, each tie is one point)
 Write a reset method that zeroes out this team's wins, losses, and ties.
 */
-    
+
 
 
 
